@@ -1,5 +1,8 @@
 body{
   margin: 0;
+  font-family: 'AppleSDGothicNeo','arial','gulim','굴림',sans-serif;
+  font-size: 12px;
+  line-height: 25px;
 }
   a:link, a:visited{
     color: black;
@@ -11,13 +14,13 @@ body{
   }
   h1{
     font-size: 40px;
-    border-bottom: solid black 1px;
-    padding: 15px;
-    margin: 0;
     text-align: center;
+    padding: 15px;
+    border-bottom: 1px black solid;
+    margin: 0;
   }
   li{
-    width: 200px;
+    width: auto;
     margin: 0px;
     padding: 5px;
   }
@@ -25,11 +28,20 @@ body{
     margin: 0;
     margin-right: auto;
     border-right: 1px solid black;
-    width: 150px;
+    width: 120px;
   }
   #grid{
     display: grid;
-    grid-template-columns: 210px 1fr;
+    grid-template-columns: 180px 1fr;
+  }
+  #main{
+    border: 1px solid black;
+    width: 600px;
+    position:absolute;
+    left:50%;
+    top:50%;
+    margin-left:-300px;
+    margin-top:-300px;
   }
   @media(max-width:600px){
     #grid{
